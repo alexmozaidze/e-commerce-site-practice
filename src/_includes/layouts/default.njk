@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+styles:
+  - /styles/header.css
+---
+
+<div id="page-wrapper">
+	<header>
+		{% include "partials/header.njk" %}
+	</header>
+
+	<main>
+		{{ content | safe }}
+	</main>
+</div>

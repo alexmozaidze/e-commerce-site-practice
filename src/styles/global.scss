@@ -1,0 +1,22 @@
+:root {
+	--color-primary-white: #fff;
+	--color-primary-black: #363738;
+
+	--color-secondary-light-gray: #F5F5F5;
+	--color-secondary-light: #FEFAF1;
+	--color-secondary-red: #DB4444;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}

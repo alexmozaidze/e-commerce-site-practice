@@ -1,0 +1,43 @@
+#page-wrapper {
+	>header {
+		font-size: 14px;
+		>.top-header {
+			color: #fff;
+			background-color: #000;
+
+			>.content-wrapper {
+				display: flex;
+
+				>.sale {
+
+				}
+				>.language-dropdown-wrapper {
+					* {
+						user-select: none;
+					}
+					>ul {
+						display: none;
+					}
+					>#language-dropdown-toggle {
+						appearance: none;
+
+						&:checked ~ ul {
+							display: block;
+						}
+						&::after {
+							content: url(/static/images/dropdown-arrow.svg);
+							display: block;
+							rotate: 180deg;
+						}
+						&:checked::after {
+							rotate: 0deg;
+						}
+					}
+					>[for="language-dropdown-toggle"] {
+
+					}
+				}
+			}
+		}
+	}
+}
