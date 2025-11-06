@@ -1,2 +1,7 @@
-src/static/
 public/
+*.mp4
+*.mkv
+*.mp3
+*.opus
+*.woff2
+*.ttf

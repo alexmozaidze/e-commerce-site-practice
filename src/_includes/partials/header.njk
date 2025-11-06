@@ -5,3 +5,26 @@
 	</div>
 	<div class="language-dropdown-container">{{ page.lang | langToLabel }}</div>
 </div>
+<div class="main-header">
+	<h1 class="logo"><a href="{{ '/' | locale_url }}">Exclusive</a></h1>
+	<nav class="main-navigation">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Sing Up</a></li>
+		</ul>
+	</nav>
+	<div class="right-section-wrapper">
+		<!-- NOTE: Search is not implemented because I'm not paid enough to do it XDDDDDDD -->
+		<form class="search-form" action="/search">
+			<input id="search-field" name="search" type="search" placeholder="What are you looking for?">
+			<input id="search-submit" type="submit">
+			<label for="search-submit"><img class="search-submit-icon" src="/static/images/search-icon.svg" alt="Search"></label>
+		</form>
+		<nav class="other-navigation">
+			<a href="#"><img src="/static/images/wishlist-icon.svg" alt="Wishlist"></a>
+			<a href="#"><img src="/static/images/cart-with-buy.svg" alt="Wishlist"></a>
+		</nav>
+	</div>
+</div>
