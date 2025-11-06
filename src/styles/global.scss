@@ -1,10 +1,22 @@
 :root {
-	--color-primary-white: #fff;
-	--color-primary-black: #363738;
+	--color-primary--white: #fff;
+	--color-primary--black: #363738;
 
-	--color-secondary-light-gray: #F5F5F5;
-	--color-secondary-light: #FEFAF1;
-	--color-secondary-red: #DB4444;
+	--color-secondary--light-gray: #F5F5F5;
+	--color-secondary--light: #FEFAF1;
+	--color-secondary--red: #DB4444;
+
+	--color-background: #fff;
+
+	--color-other--button-green: #00FF66;
+	--color-other--button-red: #DB4444;
+	--color-other--button-light-red: #E07575;
+	--color-other--button-teal: #A0BCE0;
+
+	--color-text--white: #FAFAFA;
+	--color-text--gray: #7D8184;
+	--color-button-card--black: #000;
+	--color-text--black: #000;
 }
 
 *, *::before, *::after {
@@ -13,6 +25,7 @@
 
 html {
 	height: 100%;
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 body {

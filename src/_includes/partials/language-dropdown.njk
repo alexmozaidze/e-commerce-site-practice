@@ -1,9 +1,0 @@
-<div class="language-dropdown-container">
-	<label for="language-dropdown-toggle">{{ page.lang | langToLabel }}</label>
-	<input id="language-dropdown-toggle" type="checkbox">
-	<ul>
-		{% for link in page.url | locale_links %}
-		<li><a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">{{ link.label }}</a></li>
-		{% endfor %}
-	</ul>
-</div>

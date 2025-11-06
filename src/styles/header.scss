@@ -7,51 +7,30 @@
 			display: flex;
 			justify-content: center;
 			padding: 12px 0;
-			color: #fff;
-			background-color: #000;
+			color: var(--color-text--white);
+			background-color: var(--color-button-card--black);
 
 			>.sale {
 				display: flex;
 				gap: 8px;
 				min-width: max-content;
+
+				a {
+					color: var(--color-primary--white);
+					font-weight: bold;
+				}
 			}
 
 			>.language-dropdown-container {
 				position: absolute;
 				right: 9%;
+				display: flex;
+				gap: 5px;
 
-				* {
-					user-select: none;
-				}
-
-				>ul {
-					display: none;
-				}
-
-				>#language-dropdown-toggle {
-					appearance: none;
+				&::after {
+					content: url(/static/images/dropdown-arrow.svg);
 				}
 			}
-
 		}
-	}
-
-	// Dropdown logic
-	header>.top-header>.language-dropdown-container>#language-dropdown-toggle {
-		&:checked~ul {
-			display: block;
-		}
-
-		&::after {
-			content: url(/static/images/dropdown-arrow.svg);
-			display: block;
-			rotate: 180deg;
-		}
-
-		&:checked::after {
-			rotate: 0deg;
-		}
-
-		>[for="language-dropdown-toggle"] {}
 	}
 }
